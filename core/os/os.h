@@ -273,6 +273,8 @@ public:
 	virtual int get_exit_code() const;
 	virtual void set_exit_code(int p_code);
 
+	virtual String get_machine_name() const;
+
 	virtual int get_processor_count() const;
 
 	virtual String get_unique_id() const;

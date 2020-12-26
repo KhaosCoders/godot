@@ -160,6 +160,8 @@ public:
 
 	virtual String get_unique_id() const override;
 
+	virtual String get_machine_name() const;
+
 	virtual Error shell_open(String p_uri) override;
 
 	void run();
