@@ -232,6 +232,7 @@ public:
 	String get_user_data_dir() const;
 
 	Error set_thread_name(const String &p_name);
+	Thread::ID get_caller_id();
 
 	bool has_feature(const String &p_feature) const;
 
