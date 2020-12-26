@@ -145,6 +145,7 @@ opts.Add("system_certs_path", "Use this path as SSL certificates default for edi
 
 # Thirdparty libraries
 # opts.Add(BoolVariable('builtin_assimp', "Use the built-in Assimp library", True))
+opts.Add(BoolVariable("builtin_libhttp", "Use the built-in HTTP library", True))
 opts.Add(BoolVariable("builtin_bullet", "Use the built-in Bullet library", True))
 opts.Add(BoolVariable("builtin_certs", "Use the built-in SSL certificates bundles", True))
 opts.Add(BoolVariable("builtin_enet", "Use the built-in ENet library", True))
