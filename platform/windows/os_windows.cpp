@@ -724,6 +724,14 @@ String OS_Windows::get_unique_id() const {
 	return String::utf16((const char16_t *)(HwProfInfo.szHwProfileGuid), HW_PROFILE_GUIDLEN);
 }
 
+String OS_Windows::get_machine_name() const {
+
+	TCHAR  infoBuf[MAX_COMPUTERNAME_LENGTH + 1];
+	DWORD  bufCharCount = MAX_COMPUTERNAME_LENGTH + 1;
+	ERR_FAIL_COND_V(!GetComputerName(infoBuf, &bufCharCount), "");
+	return String(infoBuf);
+}
+
 bool OS_Windows::_check_internal_feature_support(const String &p_feature) {
 	return p_feature == "pc";
 }

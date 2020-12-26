@@ -184,6 +184,8 @@ public:
 
 	String get_unique_id() const;
 
+	String get_machine_name() const;
+
 	String get_keycode_string(uint32_t p_code) const;
 	bool is_keycode_unicode(uint32_t p_unicode) const;
 	int find_keycode_from_string(const String &p_code) const;
